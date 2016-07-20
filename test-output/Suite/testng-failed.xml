@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="FF"/>
+  <test name="FF Test(failed)">
+    <parameter name="Browser" value="FF"/>
+    <classes>
+      <class name="ExtendsReports.TestCase2">
+        <methods>
+          <include name="hasanBhuiyan"/>
+          <include name="atEnd"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ExtendsReports.TestCase2 -->
+      <class name="ExtendsReports.TestCase1">
+        <methods>
+          <include name="taltekcTEST"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ExtendsReports.TestCase1 -->
+    </classes>
+  </test> <!-- FF Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
