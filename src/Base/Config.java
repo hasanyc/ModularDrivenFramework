@@ -36,7 +36,7 @@ public class Config extends WebDriverFunctions{
 
 	@AfterMethod
 	public void browserClose(Method method){
-		String testName = method.getName();
+		//String testName = method.getName();
 //		Log4j.APPLICATION_LOG.debug("==========================================================================================================");
 //		Log4j.APPLICATION_LOG.debug("Test Method is: ==> " +testName+ " Just E-N-D-E-D");
 //		Log4j.APPLICATION_LOG.debug("==========================================================================================================");
