@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ExtendsReports.TestCase2">
+      <class name="TestMyAccount.SkipATest">
         <methods>
-          <include name="hasanBhuiyan"/>
-          <include name="atEnd"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="skippingTEST"/>
         </methods>
-      </class> <!-- ExtendsReports.TestCase2 -->
+      </class> <!-- TestMyAccount.SkipATest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

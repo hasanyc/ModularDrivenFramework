@@ -5,21 +5,34 @@
   <test name="FF Test(failed)">
     <parameter name="Browser" value="FF"/>
     <classes>
-      <class name="ExtendsReports.TestCase2">
+      <class name="TestMyAccount.MyAccount_CheckBalance">
         <methods>
-          <include name="hasanBhuiyan"/>
-          <include name="atEnd"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="browserClose"/>
         </methods>
-      </class> <!-- ExtendsReports.TestCase2 -->
-      <class name="ExtendsReports.TestCase1">
+      </class> <!-- TestMyAccount.MyAccount_CheckBalance -->
+      <class name="TestMyAccount.SkipATest">
         <methods>
-          <include name="taltekcTEST"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="browserClose"/>
+          <include name="skippingTEST"/>
         </methods>
-      </class> <!-- ExtendsReports.TestCase1 -->
+      </class> <!-- TestMyAccount.SkipATest -->
+      <class name="TestMyAccount.FailTEST">
+        <methods>
+          <include name="setUp"/>
+          <include name="browserClose"/>
+          <include name="failTestTesting" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestMyAccount.FailTEST -->
+      <class name="TestMyAccount.MyAccount_TransferMoney">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="browserClose"/>
+        </methods>
+      </class> <!-- TestMyAccount.MyAccount_TransferMoney -->
     </classes>
   </test> <!-- FF Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

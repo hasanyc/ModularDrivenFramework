@@ -12,7 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import Util.WebDriverFunctions;
 
 public class Reports {
-	ExtentReports report = new ExtentReports("C:\\Users\\hassan.bhuiyan\\workspace\\ModularDriverFramework\\Report\\talentTEK.html");
+	ExtentReports report = new ExtentReports(System.getProperty ("user.dir")+"//Report//talentTEK.html");
 	ExtentTest logger; 
 	WebDriver driver;
 
@@ -27,7 +27,7 @@ public class Reports {
 	@AfterMethod
 	public void tearDown(ITestResult result){
 		if(result.getStatus()==ITestResult.FAILURE){
-			String screenshot_path=WebDriverFunctions.captureScreenshot(driver, result.getName());
+			String screenshot_path=WebDriverFunctions.captureScreenshot(result.getName());
 			String image= logger.addScreenCapture(screenshot_path);
 			logger.log(LogStatus.FAIL, "Title verification", image);
 		}

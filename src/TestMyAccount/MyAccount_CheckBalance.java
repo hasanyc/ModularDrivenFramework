@@ -1,5 +1,7 @@
 package TestMyAccount;
 
+import java.lang.reflect.Method;
+
 import org.testng.annotations.Test;
 
 import Base.Config;
@@ -14,8 +16,9 @@ public class MyAccount_CheckBalance extends Config {
 	
 	
 	@Test
-	public void myAccount_CheckBalanceTest(){
-		String url = System.getProperty("user.dir");
-		System.out.println(url);
+	public void myAccount_CheckBalanceTest(Method method){
+		String testName = method.getName();
+		captureScreenshot (testName);
+		APPLICATION_LOG.debug("scheenshot name is " +testName+".png");
 	}
 }
