@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [aq]">
   <parameter name="Browser" value="FF"/>
   <test name="FF Test(failed)">
     <parameter name="Browser" value="FF"/>
@@ -35,4 +35,4 @@
       </class> <!-- TestMyAccount.MyAccount_TransferMoney -->
     </classes>
   </test> <!-- FF Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [aq] -->
