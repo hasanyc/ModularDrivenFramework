@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="1" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51650" started-at="2016-11-07T19:19:20Z" finished-at="2016-11-07T19:20:11Z">
+  <suite name="aq" duration-ms="75088" started-at="2016-11-07T19:26:13Z" finished-at="2016-11-07T19:27:28Z">
     <groups>
     </groups>
-    <test name="FF Test" duration-ms="51650" started-at="2016-11-07T19:19:20Z" finished-at="2016-11-07T19:20:11Z">
+    <test name="FF Test" duration-ms="75088" started-at="2016-11-07T19:26:13Z" finished-at="2016-11-07T19:27:28Z">
       <class name="TestMyAccount.MyAccount_TransferMoney">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2016-11-07T14:19:20Z" finished-at="2016-11-07T14:19:20Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2016-11-07T14:26:13Z" finished-at="2016-11-07T14:26:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="setUp" is-config="true" duration-ms="14878" started-at="2016-11-07T14:19:20Z" finished-at="2016-11-07T14:19:35Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="setUp" is-config="true" duration-ms="15918" started-at="2016-11-07T14:26:13Z" finished-at="2016-11-07T14:26:29Z">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myAccount_TransferMoneyTest()[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="myAccount_TransferMoneyTest" duration-ms="4" started-at="2016-11-07T14:19:35Z" finished-at="2016-11-07T14:19:35Z">
+        <test-method status="PASS" signature="myAccount_TransferMoneyTest()[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="myAccount_TransferMoneyTest" duration-ms="6" started-at="2016-11-07T14:26:29Z" finished-at="2016-11-07T14:26:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myAccount_TransferMoneyTest -->
-        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="browserClose" is-config="true" duration-ms="14" started-at="2016-11-07T14:19:35Z" finished-at="2016-11-07T14:19:35Z">
+        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="browserClose" is-config="true" duration-ms="15" started-at="2016-11-07T14:26:29Z" finished-at="2016-11-07T14:26:29Z">
           <params>
             <param index="0">
               <value>
@@ -42,13 +42,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="tearDown" is-config="true" duration-ms="1159" started-at="2016-11-07T14:20:11Z" finished-at="2016-11-07T14:20:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestMyAccount.MyAccount_TransferMoney@6325a3ee]" name="tearDown" is-config="true" duration-ms="3126" started-at="2016-11-07T14:27:29Z" finished-at="2016-11-07T14:27:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestMyAccount.MyAccount_TransferMoney -->
       <class name="TestMyAccount.SkipATest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.SkipATest@2b9627bc]" name="setUp" is-config="true" duration-ms="12543" started-at="2016-11-07T14:19:59Z" finished-at="2016-11-07T14:20:11Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.SkipATest@2b9627bc]" name="setUp" is-config="true" duration-ms="22522" started-at="2016-11-07T14:27:06Z" finished-at="2016-11-07T14:27:28Z">
           <params>
             <param index="0">
               <value>
@@ -64,7 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="skippingTEST()[pri:0, instance:TestMyAccount.SkipATest@2b9627bc]" name="skippingTEST" duration-ms="21" started-at="2016-11-07T14:20:11Z" finished-at="2016-11-07T14:20:11Z">
+        <test-method status="SKIP" signature="skippingTEST()[pri:0, instance:TestMyAccount.SkipATest@2b9627bc]" name="skippingTEST" duration-ms="111" started-at="2016-11-07T14:27:28Z" finished-at="2016-11-07T14:27:28Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping test]]>
@@ -103,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skippingTEST -->
-        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.SkipATest@2b9627bc]" name="browserClose" is-config="true" duration-ms="12" started-at="2016-11-07T14:20:11Z" finished-at="2016-11-07T14:20:11Z">
+        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.SkipATest@2b9627bc]" name="browserClose" is-config="true" duration-ms="26" started-at="2016-11-07T14:27:28Z" finished-at="2016-11-07T14:27:28Z">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- TestMyAccount.SkipATest -->
       <class name="TestMyAccount.MyAccount_CheckBalance">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_CheckBalance@1d16f93d]" name="setUp" is-config="true" duration-ms="11886" started-at="2016-11-07T14:19:35Z" finished-at="2016-11-07T14:19:46Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_CheckBalance@1d16f93d]" name="setUp" is-config="true" duration-ms="16024" started-at="2016-11-07T14:26:29Z" finished-at="2016-11-07T14:26:45Z">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myAccount_CheckBalanceTest(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_CheckBalance@1d16f93d]" name="myAccount_CheckBalanceTest" duration-ms="145" started-at="2016-11-07T14:19:46Z" finished-at="2016-11-07T14:19:47Z">
+        <test-method status="PASS" signature="myAccount_CheckBalanceTest(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_CheckBalance@1d16f93d]" name="myAccount_CheckBalanceTest" duration-ms="390" started-at="2016-11-07T14:26:45Z" finished-at="2016-11-07T14:26:46Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myAccount_CheckBalanceTest -->
-        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_CheckBalance@1d16f93d]" name="browserClose" is-config="true" duration-ms="9" started-at="2016-11-07T14:19:47Z" finished-at="2016-11-07T14:19:47Z">
+        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.MyAccount_CheckBalance@1d16f93d]" name="browserClose" is-config="true" duration-ms="23" started-at="2016-11-07T14:26:46Z" finished-at="2016-11-07T14:26:46Z">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- TestMyAccount.MyAccount_CheckBalance -->
       <class name="TestMyAccount.FailTEST">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.FailTEST@67b92f0a]" name="setUp" is-config="true" duration-ms="12090" started-at="2016-11-07T14:19:47Z" finished-at="2016-11-07T14:19:59Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestMyAccount.FailTEST@67b92f0a]" name="setUp" is-config="true" duration-ms="19295" started-at="2016-11-07T14:26:46Z" finished-at="2016-11-07T14:27:05Z">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="failTestTesting(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.FailTEST@67b92f0a]" name="failTestTesting" duration-ms="25" started-at="2016-11-07T14:19:59Z" finished-at="2016-11-07T14:19:59Z">
+        <test-method status="FAIL" signature="failTestTesting(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.FailTEST@67b92f0a]" name="failTestTesting" duration-ms="708" started-at="2016-11-07T14:27:05Z" finished-at="2016-11-07T14:27:06Z">
           <params>
             <param index="0">
               <value>
@@ -222,7 +222,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failTestTesting -->
-        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.FailTEST@67b92f0a]" name="browserClose" is-config="true" duration-ms="9" started-at="2016-11-07T14:19:59Z" finished-at="2016-11-07T14:19:59Z">
+        <test-method status="PASS" signature="browserClose(java.lang.reflect.Method)[pri:0, instance:TestMyAccount.FailTEST@67b92f0a]" name="browserClose" is-config="true" duration-ms="24" started-at="2016-11-07T14:27:06Z" finished-at="2016-11-07T14:27:06Z">
           <params>
             <param index="0">
               <value>
@@ -235,5 +235,5 @@
         </test-method> <!-- browserClose -->
       </class> <!-- TestMyAccount.FailTEST -->
     </test> <!-- FF Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- aq -->
 </testng-results>
