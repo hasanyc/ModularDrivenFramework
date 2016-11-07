@@ -2,6 +2,7 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Hasan\workspace\ModularDrivenFramework\testng.xml</span>
+                    <span>C:\Users\hassan.bhuiyan\workspace\ModularDriverFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -163,7 +164,7 @@
                   <span class="parameters">(public void TestMyAccount.FailTEST.failTestTesting(java.lang.reflect.Method))</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at TestMyAccount.FailTEST.failTestTesting(FailTEST.java:22)
-... Removed 27 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -182,7 +183,7 @@
                   <span class="method-name">skippingTEST</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping test
 	at TestMyAccount.SkipATest.skippingTEST(SkipATest.java:24)
-... Removed 23 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -222,7 +223,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hasan\workspace\ModularDrivenFramework\testng.xml</span>
+            <span class="header-content">C:\Users\hassan.bhuiyan\workspace\ModularDriverFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -277,26 +278,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'myAccount_CheckBalanceTest')
-data.setCell(0, 2, 'TestMyAccount.MyAccount_CheckBalance')
-data.setCell(0, 3, 368);
+data.setCell(0, 1, 'failTestTesting')
+data.setCell(0, 2, 'TestMyAccount.FailTEST')
+data.setCell(0, 3, 135);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'failTestTesting')
-data.setCell(1, 2, 'TestMyAccount.FailTEST')
-data.setCell(1, 3, 46);
+data.setCell(1, 1, 'myAccount_CheckBalanceTest')
+data.setCell(1, 2, 'TestMyAccount.MyAccount_CheckBalance')
+data.setCell(1, 3, 128);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'skippingTEST')
 data.setCell(2, 2, 'TestMyAccount.SkipATest')
-data.setCell(2, 3, 30);
+data.setCell(2, 3, 10);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'myAccount_TransferMoneyTest')
 data.setCell(3, 2, 'TestMyAccount.MyAccount_TransferMoney')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 5);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 445 ms</span>
+              <span class="suite-total-time">Total running time: 278 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -315,7 +316,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestMyAccount.MyAccount_CheckBalance</span>
+              <span class="ignored-class-name">TestMyAccount.FailTEST</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
@@ -333,7 +334,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestMyAccount.FailTEST</span>
+              <span class="ignored-class-name">TestMyAccount.MyAccount_CheckBalance</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
@@ -356,69 +357,69 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(FF, public void TestMyAccount.MyAccount_TransferMoney.myAccount_TransferMoneyTest())</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">myAccount_TransferMoneyTest</span>
-                <span class="method-start">9826 ms</span>
+                <span class="method-start">15987 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose(public void TestMyAccount.MyAccount_TransferMoney.myAccount_TransferMoneyTest())</span>
-                <span class="method-start">9828 ms</span>
+                <span class="method-start">15993 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMyAccount.MyAccount_CheckBalance</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(FF, public void TestMyAccount.MyAccount_CheckBalance.myAccount_CheckBalanceTest(java.lang.reflect.Me...)</span>
-                <span class="method-start">9867 ms</span>
+                <span class="method-start">16005 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">myAccount_CheckBalanceTest(public void TestMyAccount.MyAccount_CheckBalance.myAccount_CheckBalanceTest(java.lang.reflect.Method...)</span>
-                <span class="method-start">19329 ms</span>
+                <span class="method-start">28472 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose(public void TestMyAccount.MyAccount_CheckBalance.myAccount_CheckBalanceTest(java.lang.reflect.Method...)</span>
-                <span class="method-start">19697 ms</span>
+                <span class="method-start">28601 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMyAccount.FailTEST</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(FF, public void TestMyAccount.FailTEST.failTestTesting(java.lang.reflect.Method))</span>
-                <span class="method-start">19737 ms</span>
+                <span class="method-start">28611 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">failTestTesting(public void TestMyAccount.FailTEST.failTestTesting(java.lang.reflect.Method))</span>
-                <span class="method-start">29824 ms</span>
+                <span class="method-start">40671 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose(public void TestMyAccount.FailTEST.failTestTesting(java.lang.reflect.Method))</span>
-                <span class="method-start">29871 ms</span>
+                <span class="method-start">40807 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMyAccount.SkipATest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(FF, public void TestMyAccount.SkipATest.skippingTEST())</span>
-                <span class="method-start">29914 ms</span>
+                <span class="method-start">40816 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">skippingTEST</span>
-                <span class="method-start">39550 ms</span>
+                <span class="method-start">52963 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose(public void TestMyAccount.SkipATest.skippingTEST())</span>
-                <span class="method-start">39580 ms</span>
+                <span class="method-start">52973 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMyAccount.MyAccount_TransferMoney</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39660 ms</span>
+                <span class="method-start">53017 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

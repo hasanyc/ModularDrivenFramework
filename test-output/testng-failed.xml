@@ -5,19 +5,6 @@
   <test name="FF Test(failed)">
     <parameter name="Browser" value="FF"/>
     <classes>
-      <class name="TestMyAccount.MyAccount_CheckBalance">
-        <methods>
-          <include name="setUp"/>
-          <include name="browserClose"/>
-        </methods>
-      </class> <!-- TestMyAccount.MyAccount_CheckBalance -->
-      <class name="TestMyAccount.SkipATest">
-        <methods>
-          <include name="setUp"/>
-          <include name="browserClose"/>
-          <include name="skippingTEST"/>
-        </methods>
-      </class> <!-- TestMyAccount.SkipATest -->
       <class name="TestMyAccount.FailTEST">
         <methods>
           <include name="setUp"/>
@@ -25,6 +12,19 @@
           <include name="failTestTesting" invocation-numbers="0"/>
         </methods>
       </class> <!-- TestMyAccount.FailTEST -->
+      <class name="TestMyAccount.SkipATest">
+        <methods>
+          <include name="setUp"/>
+          <include name="browserClose"/>
+          <include name="skippingTEST"/>
+        </methods>
+      </class> <!-- TestMyAccount.SkipATest -->
+      <class name="TestMyAccount.MyAccount_CheckBalance">
+        <methods>
+          <include name="setUp"/>
+          <include name="browserClose"/>
+        </methods>
+      </class> <!-- TestMyAccount.MyAccount_CheckBalance -->
       <class name="TestMyAccount.MyAccount_TransferMoney">
         <methods>
           <include name="beforeSuite"/>

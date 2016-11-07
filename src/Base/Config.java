@@ -7,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -39,6 +38,7 @@ public class Config extends WebDriverFunctions{
 	@BeforeMethod
 	public void setUp(String browserName, Method method) throws MalformedURLException{
 		if(browserName.equalsIgnoreCase("FF")){
+			System.setProperty("webdriver.gecko.driver",(System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe"));
 			driver=new FirefoxDriver();
 			APPLICATION_LOG.debug ("Firefox has been selected");
 		} else if (browserName.equalsIgnoreCase("IE")) {
