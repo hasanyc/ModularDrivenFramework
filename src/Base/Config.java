@@ -87,6 +87,7 @@ public class Config extends WebDriverFunctions{
 		endTime();
 		try{
 			driver.quit();
+
 		} catch (Exception e) {
 			APPLICATION_LOG.debug(e);
 		}
@@ -105,7 +106,7 @@ public class Config extends WebDriverFunctions{
 		APPLICATION_LOG.debug("Test Suite started at: ==>>  " + t);
 		APPLICATION_LOG.debug("");
 	}
-	
+
 	public static void endTime (){
 		String t;
 		Date date;
