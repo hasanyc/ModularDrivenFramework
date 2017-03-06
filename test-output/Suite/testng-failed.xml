@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="ch"/>
+  <test name="Test(failed)">
+    <parameter name="Browser" value="ch"/>
+    <classes>
+      <class name="TestMethodAndLog4j.testAllMethodWise">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="linkTest3"/>
+          <include name="linkTest1"/>
+          <include name="setUp"/>
+          <include name="linkTest"/>
+        </methods>
+      </class> <!-- TestMethodAndLog4j.testAllMethodWise -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

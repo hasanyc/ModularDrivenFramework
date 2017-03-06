@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,11 +15,14 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+
 import Util.WebDriverFunctions;
 
 
@@ -35,8 +39,8 @@ public class Config extends WebDriverFunctions{
 	}
 
 	@Parameters("Browser")
-	@BeforeMethod
-	public void setUp(String browserName, Method method) throws MalformedURLException{
+	@BeforeClass
+	public void setUp(String browserName) throws MalformedURLException{
 		if(browserName.equalsIgnoreCase("FF")){
 			System.setProperty("webdriver.gecko.driver",(System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe"));
 			driver=new FirefoxDriver();
@@ -65,22 +69,30 @@ public class Config extends WebDriverFunctions{
 		driver.manage().window().maximize();
 		driver.get(baseUrl);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
 
+	@BeforeMethod()
+	public void beforeEachMethod(Method method){
 		String testName = method.getName();
 		APPLICATION_LOG.debug("==========================================================================================================");
 		APPLICATION_LOG.debug("Test Method is: ==> " +testName+ " Just S-T-A-R-T-E-D");
 		APPLICATION_LOG.debug("==========================================================================================================");
 	}
 
+
 	@AfterMethod
-	public void browserClose(Method method){
+	public void afterEachMethod(Method method){
 		String testName = method.getName();
 		APPLICATION_LOG.debug("==========================================================================================================");
 		APPLICATION_LOG.debug("Test Method is: ==> " +testName+ " Just E-N-D-E-D");
 		APPLICATION_LOG.debug("==========================================================================================================");
-		driver.close();
+
 	}
 
+	@AfterClass
+	public void closeConn (){
+		driver.close();
+	}
 	@AfterSuite
 	public static void tearDown (){
 		System.out.println("");

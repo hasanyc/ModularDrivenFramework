@@ -1,38 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [aq]">
-  <parameter name="Browser" value="FF"/>
-  <test name="FF Test(failed)">
-    <parameter name="Browser" value="FF"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="ch"/>
+  <test name="Test(failed)">
+    <parameter name="Browser" value="ch"/>
     <classes>
-      <class name="TestMyAccount.FailTEST">
-        <methods>
-          <include name="setUp"/>
-          <include name="browserClose"/>
-          <include name="failTestTesting" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- TestMyAccount.FailTEST -->
-      <class name="TestMyAccount.SkipATest">
-        <methods>
-          <include name="setUp"/>
-          <include name="browserClose"/>
-          <include name="skippingTEST"/>
-        </methods>
-      </class> <!-- TestMyAccount.SkipATest -->
-      <class name="TestMyAccount.MyAccount_CheckBalance">
-        <methods>
-          <include name="setUp"/>
-          <include name="browserClose"/>
-        </methods>
-      </class> <!-- TestMyAccount.MyAccount_CheckBalance -->
-      <class name="TestMyAccount.MyAccount_TransferMoney">
+      <class name="TestMethodAndLog4j.testAllMethodWise">
         <methods>
           <include name="beforeSuite"/>
+          <include name="linkTest3"/>
+          <include name="linkTest1"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="browserClose"/>
+          <include name="linkTest"/>
         </methods>
-      </class> <!-- TestMyAccount.MyAccount_TransferMoney -->
+      </class> <!-- TestMethodAndLog4j.testAllMethodWise -->
     </classes>
-  </test> <!-- FF Test(failed) -->
-</suite> <!-- Failed suite [aq] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
