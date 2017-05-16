@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [pageObject]">
+  <parameter name="pageObjectModel" value="FF"/>
+  <test name="CH Test(failed)">
+    <parameter name="pageObjectModel" value="FF"/>
+    <classes>
+      <class name="TestLogin.Login_UsingValidUserInfo">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="logIn_validUserInfoTest"/>
+        </methods>
+      </class> <!-- TestLogin.Login_UsingValidUserInfo -->
+    </classes>
+  </test> <!-- CH Test(failed) -->
+</suite> <!-- Failed suite [pageObject] -->

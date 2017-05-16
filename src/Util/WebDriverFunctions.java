@@ -13,7 +13,13 @@ public class WebDriverFunctions {
 	protected static WebDriver driver;
 	
 	public void typeByXPath (String locator, String value){
+		driver.findElement(By.xpath(locator)).clear();
 		driver.findElement(By.xpath(locator)).sendKeys (value);
+	}
+	
+	public void clickByXPath (String locator){
+		driver.findElement(By.xpath(locator)).click();
+
 	}
 
 	public static String captureScreenshot (String screenshotName ){

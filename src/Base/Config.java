@@ -29,7 +29,7 @@ import Util.WebDriverFunctions;
 public class Config extends WebDriverFunctions{
 
 	public static Logger APPLICATION_LOG = Logger.getLogger("devpinoyLogger");
-	protected static  String baseUrl = "http://wwww.taltekc.com/";
+	protected static  String baseUrl = "https://www.facebook.com/";
 
 
 	@BeforeSuite
@@ -91,14 +91,14 @@ public class Config extends WebDriverFunctions{
 
 	@AfterClass
 	public void closeConn (){
-		driver.close();
+		//driver.close();
 	}
 	@AfterSuite
 	public static void tearDown (){
 		System.out.println("");
 		endTime();
 		try{
-			driver.quit();
+			//driver.quit();
 
 		} catch (Exception e) {
 			APPLICATION_LOG.debug(e);
